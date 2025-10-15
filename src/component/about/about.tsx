@@ -92,7 +92,7 @@ const About = () => {
             {activeTab === 'mission' && (
               <div className={styles.tabPanel}>
                 <h3>Our Mission</h3>
-                <p>To provide exceptional early education that nurtures each child's unique potential while fostering a love for learning that lasts a lifetime.</p>
+                <p>To provide exceptional early education that nurtures each child&apos;s unique potential while fostering a love for learning that lasts a lifetime.</p>
                 <ul className={styles.bulletPoints}>
                   <li>Personalized Learning Approach</li>
                   <li>Safe and Nurturing Environment</li>
@@ -157,11 +157,11 @@ const About = () => {
               </div>
             </div>
             <div className={styles.founderMessage}>
-              <h3>Founder's Message</h3>
+              <h3>Founder&apos;s Message</h3>
               <p className={styles.messageQuote}>
-                "Our journey began with a simple yet powerful vision: to create a space where 
-                every child's potential is recognized and nurtured. Today, that vision has 
-                blossomed into a thriving community of learners."
+                &quot;Our journey began with a simple yet powerful vision: to create a space where 
+                every child&apos;s potential is recognized and nurtured. Today, that vision has 
+                blossomed into a thriving community of learners.&quot;
               </p>
               <div className={styles.founderInfo}>
                 <h4>Dr. Emily Anderson</h4>
@@ -211,7 +211,7 @@ const About = () => {
         <div className={`${styles.ctaSection} ${styles.fadeIn}`}>
           <div className={styles.ctaContent}>
             <h3>Join Our Educational Community</h3>
-            <p>Take the first step towards your child's bright future</p>
+            <p>Take the first step towards your child&apos;s bright future</p>
             <button className={styles.ctaButton}>
               Schedule a Visit
               <span className={styles.buttonIcon}>→</span>

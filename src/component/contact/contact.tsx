@@ -23,7 +23,7 @@ const Contact = () => {
           <span className={styles.sectionTag}>Get in Touch</span>
           <h2 className={styles.sectionTitle}>Contact Us</h2>
           <p className={styles.sectionDesc}>
-            We're here to help and answer any questions you might have
+            We&apos;re here to help and answer any questions you might have
           </p>
         </div>
 
@@ -45,7 +45,7 @@ const Contact = () => {
                 <i className={styles.icon}>📧</i>
               </div>
               <h3>Email Us</h3>
-              <p>We'll respond within 24 hours</p>
+              <p>We&apos;ll respond within 24 hours</p>
               <a href="mailto:info@playschool.com" className={styles.contactLink}>
                 info@playschool.com
               </a>
