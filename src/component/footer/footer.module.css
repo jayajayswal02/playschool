@@ -1,0 +1,269 @@
+.footer {
+  background: #1e293b;
+  color: #ffffff;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.topSection {
+  padding: 4rem 0;
+  background: linear-gradient(to bottom, #1e293b, #2c3e50);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 4rem;
+}
+
+/* School Info Styles */
+.schoolInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.logo {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logoText {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.playText {
+  color: #ffffff;
+}
+
+.schoolText {
+  color: #3498db;
+}
+
+.schoolDesc {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background: #3498db;
+  transform: translateY(-3px);
+}
+
+/* Links Column Styles */
+.linksColumn h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.linksList a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.linksList a:hover {
+  color: #3498db;
+  transform: translateX(5px);
+  display: inline-block;
+}
+
+/* Newsletter Styles */
+.newsletterColumn h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletterColumn p {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.subscribeForm input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.subscribeForm input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.subscribeForm button {
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribeForm button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Contact Strip Styles */
+.contactStrip {
+  padding: 1.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+}
+
+.contactItem a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactItem a:hover {
+  color: #3498db;
+}
+
+.icon {
+  color: #3498db;
+}
+
+/* Bottom Section Styles */
+.bottomSection {
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  color: #94a3b8;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.bottomLinks a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bottomLinks a:hover {
+  color: #3498db;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bottomContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bottomLinks {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribeForm {
+    flex-direction: column;
+  }
+
+  .subscribeForm button {
+    width: 100%;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer * {
+  animation: fadeIn 0.5s ease-out forwards;
+}

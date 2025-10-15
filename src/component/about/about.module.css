@@ -1,0 +1,348 @@
+.aboutSection {
+  padding: 6rem 2rem;
+  background: #ffffff;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTag {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: rgba(79, 70, 229, 0.1);
+  border: 1px solid #3498db;
+  border-radius: 30px;
+  color: #3498db;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  color: #1E293B;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.sectionDesc {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #64748B;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* MVV Section Styles */
+.mvvSection {
+  margin-bottom: 6rem;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tabButton {
+  padding: 1rem 2rem;
+  border: none;
+  background: #F8FAFC;
+  color: #64748B;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabButton.active {
+  background: #3498db;
+  color: white;
+}
+
+.tabContent {
+  background: #F8FAFC;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.tabPanel h3 {
+  color: #1E293B;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.tabPanel p {
+  color: #64748B;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.bulletPoints {
+  list-style: none;
+  padding: 0;
+}
+
+.bulletPoints li {
+  color: #64748B;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.bulletPoints li::before {
+  content: '•';
+  color: #3498db;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+}
+
+/* Founder Section Styles */
+.founderSection {
+  margin-bottom: 6rem;
+  background: #F8FAFC;
+  padding: 4rem;
+  border-radius: 30px;
+}
+
+.founderContent {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.founderImageWrapper {
+  position: relative;
+}
+
+.founderImage {
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.founderBadge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: #3498db;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.founderMessage h3 {
+  color: #1E293B;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.messageQuote {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #64748B;
+  font-style: italic;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.messageQuote::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 4rem;
+  color: #3498db;
+  opacity: 0.2;
+}
+
+.founderInfo h4 {
+  color: #1E293B;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.founderInfo span {
+  color: #64748B;
+}
+
+/* Staff Section Styles */
+.staffSection {
+  margin-bottom: 6rem;
+}
+
+.staffGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.staffCard {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.staffCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.staffImageWrapper {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.staffImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.staffCard:hover .staffImage {
+  transform: scale(1.05);
+}
+
+.staffInfo {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.staffInfo h3 {
+  color: #1E293B;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.staffRole {
+  display: block;
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.staffBio {
+  color: #64748B;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.staffSocial {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socialLink {
+  color: #64748B;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #3498db;
+}
+
+/* CTA Section Styles */
+.ctaSection {
+  text-align: center;
+  padding: 4rem;
+  background: linear-gradient(135deg, #3498db 0%, #3498db 100%);
+  border-radius: 30px;
+  color: white;
+}
+
+.ctaContent h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  padding: 1rem 2.5rem;
+  background: white;
+  color: #3498db;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .staffGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .founderContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .founderImageWrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabContainer {
+    flex-direction: column;
+  }
+
+  .tabButton {
+    width: 100%;
+  }
+
+  .staffGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .tabContent {
+    padding: 1.5rem;
+  }
+
+  .founderSection {
+    padding: 2rem;
+  }
+}
